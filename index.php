@@ -15,7 +15,7 @@
     ini_set('log_errors', TRUE); // Error/Exception file logging engine.
 
     ini_set("error_log", "mvcphp-error.log");
-    error_log( "Hello, errors!" );
+    // error_log( "Hello, errors!" );
 
 
     echo "Hola mundo";
