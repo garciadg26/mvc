@@ -1,13 +1,15 @@
 <?php
 
-    //OBTENEMOS LA LONGITUD DE LA CADENA DE TEXTO DEL DOMINIO
-    $folderPath = dirname($_SERVER['SCRIPT_NAME']);
-    //OBTENEMOS LA DIRECCIN URL
-    $urlPath = $_SERVER['REQUEST_URI'];
-    //OBTENEMOS LA URL SIN EL DOMINIO
-    $url = substr($urlPath, strlen($folderPath));
+    // Configuración de la aplicación
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'mvc_user');
+    define('DB_PASS', 'Ricardo$2023*');
+    define('DB_NAME', 'mvc_db');
 
-    //DECLARAMOS UNA CONSTANTE GLOBAL
-    define('URL', $url);
-    
+    // URL base de la aplicación
+    define('BASE_URL', 'http://localhost/mvc/');
+
+    // Directorio raíz de la aplicación
+    define('APP_ROOT', dirname(dirname(__FILE__)));
+
 ?>

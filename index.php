@@ -17,6 +17,14 @@
     ini_set("error_log", "mvcphp-error.log");
     // error_log( "Hello, errors!" );
 
+    // require_once __DIR__.'./app/core/Router.php';
 
-    echo "Hola mundo";
+    // Punto de entrada de la aplicación
+    require_once __DIR__ . '/config/config.php';
+    require_once __DIR__ . '/app/core/App.php';
+    require_once __DIR__ . '/app/core/Controller.php';
+    require_once __DIR__ . '/app/core/Database.php';
+
+    // Iniciar la aplicación
+    $app = new App();
 ?>
